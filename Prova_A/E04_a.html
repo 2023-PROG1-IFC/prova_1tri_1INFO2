@@ -8,11 +8,13 @@
     */
 
     //ENTRADA
-
+    const idadePet = Number(prompt("Qual a idade do pet?"));
+    const precoConsulta = Number(prompt("Qual o preço da consulta anual?").trim().replace(",", "."));
+    const precoVacina = Number(prompt("Qual o preço para a aplicação de vacinas?").trim().replace(",", "."));
 
     //PROCESSAMENTO
-
+    const custoTotal = (precoConsulta + precoVacina) * idadePet;
 
     //SAÍDA
-
+    alert(`O custo total com os cuidados mínimos recomendados durante toda a vida do pet é R$ ${custoTotal.toFixed(2).replace(".", ",")}`);
 </script>

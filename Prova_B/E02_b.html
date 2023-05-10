@@ -7,11 +7,12 @@
     */
 
     //ENTRADA
-
+    const valorCompraProduto = Number(prompt("Qual o valor de compra do produto?").trim().replace(",", "."));
+    const percentualLucro = Number(prompt("Qual o percentual de lucro desejado?").trim().replace(",", "."));
 
     //PROCESSAMENTO
-
+    const valorRevendaProduto = valorCompraProduto + (valorCompraProduto * percentualLucro / 100);
 
     //SAÍDA
-
+    alert(`O valor de revenda do produto é R$ ${valorRevendaProduto.toFixed(2).replace(".", ",")}`);
 </script>

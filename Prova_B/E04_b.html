@@ -7,11 +7,13 @@
     */
 
     //ENTRADA
-
+    const aguaIrmao1 = Number(prompt("Quantos litros de água o irmão 1 consome diariamente?"));
+    const aguaIrmao2 = Number(prompt("Quantos litros de água o irmão 2 consome diariamente?"));
+    const aguaIrmao3 = Number(prompt("Quantos litros de água o irmão 3 consome diariamente?"));
 
     //PROCESSAMENTO
-
+    const media = (aguaIrmao1 + aguaIrmao2 + aguaIrmao3) / 3;
 
     //SAÍDA
-
+    alert(`A média de consumo de água dos irmãos é ${media.toFixed(2)}`);
 </script>

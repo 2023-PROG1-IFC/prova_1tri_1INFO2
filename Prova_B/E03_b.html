@@ -7,11 +7,12 @@
     */
 
     //ENTRADA
-
+    const precoGarrafa = Number(prompt("Qual o preço da garrafa de água?").trim().replace(",", "."));
 
     //PROCESSAMENTO
-
+    const litrosConsumidos = 7 * 600 * 365 / 1000;
+    const gastoTotal = litrosConsumidos * precoGarrafa;
 
     //SAÍDA
-
+    alert(`A pessoa terá tomado ${litrosConsumidos.toFixed(2).replace(".", ",")} litros de água ao fim de 2 anos e terá gasto R$ ${gastoTotal.toFixed(2).replace(".", ",")}`);
 </script>

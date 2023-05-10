@@ -11,11 +11,13 @@
     */
 
     //ENTRADA
-
+    const valorNormal = Number(prompt("Qual o valor do ingresso normal?"));
+    const valorCamarote = Number(prompt("Qual o valor do ingresso camarote?"));
+    const valorVip = Number(prompt("Qual o valor do ingresso vip?"));
 
     //PROCESSAMENTO
-
+    const media = (valorNormal + valorCamarote + valorVip) / 3;
 
     //SAÍDA
-
+    alert(`O preço médio para o show é R$ ${media.toFixed(2).replace(".", ",")}`);
 </script>

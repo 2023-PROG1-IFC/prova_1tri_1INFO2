@@ -7,11 +7,12 @@
     */
 
     //ENTRADA
-
+    const salarioMinimo = 1320;
+    const inflacao = Number(prompt("Informe a inflação anual (porcentagem):"));
 
     //PROCESSAMENTO
-
+    const salarioMinimo2024 = salarioMinimo + (salarioMinimo * (inflacao / 100));
 
     //SAÍDA
-
+    alert(`O valor do salário mínimo em 2024 será R$ ${salarioMinimo2024.toFixed(2).replace(".", ",")}`);
 </script>
